@@ -577,7 +577,13 @@ void RADIO_ConfigureSquelchAndOutputPower(VFO_Info_t *pInfo)
                 Txp[p] = (Txp[p] * 4) / 10; // + shift[pInfo->OUTPUT_POWER];
                 break;
             case 4:
-                Txp[p] = (Txp[p] * 4) / 7; // + shift[pInfo->OUTPUT_POWER];
+                //Txp[p] = (Txp[p] * 4) / 7; // + shift[pInfo->OUTPUT_POWER];
+                if (Band == BAND6_400MHz){
+		            Txp[p] = (Txp[p] * 4) / 8;   // Change here if you want to fine-tune the output power for 430MHz band. 
+	            }
+	            else if (Band == BAND3_137MHz){
+		            Txp[p] = (Txp[p] * 4) / 12;   // Change here if you want to fine-tune the output power for 144MHz band. 
+	            }
                 break;
             case 5:
                 Txp[p] = (Txp[p] * 3) / 4;
