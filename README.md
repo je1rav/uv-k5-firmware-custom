@@ -136,6 +136,15 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
 * code refactoring and many memory optimization,
 * and more...
 
+## Added feature by JE1RAV to adjust JA regulation without hardware modifications:
+* The maximum power output is limited to 1 W because of JA spurious regulation, which requires less than -60dBc above 1W output and less than 50uW below 1W output.
+* TX frequency limitation for JA (Cannot be selected even from a hidden menu)
+* Three compiled binary files for egzumer's uvtools to flash the firmware.
+   * f4hwn.packed.bin: fagci spectrum analyzer + FM radio without VOX, aircopy and so on.
+   * f4hwn_spectrum.packed.bin: spectrum analyzer improved by F4HWM without FM radio.
+   * f4hwn_fmradio.packed.bin: FM radio without spectrum analyzer.
+
+
 ## Main features from Egzumer:
 * many of OneOfEleven mods:
    * AM fix, huge improvement in reception quality
