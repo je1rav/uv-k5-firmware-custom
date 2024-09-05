@@ -318,7 +318,7 @@ const char * const gSubMenu_F_LOCK[] =
     "JA HAM\n144-146\n430-440",
 #endif
     "DISABLE\nALL",
-    "CE HAM\n144-146\n430-440"
+    "UNLOCK\nNot\working"
 #else
     "DEFAULT+\n137-174\n400-470",
     "FCC HAM\n144-148\n420-450",
