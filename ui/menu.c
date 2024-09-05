@@ -302,7 +302,8 @@ const char gSubMenu_RESET[][4] =
 const char * const gSubMenu_F_LOCK[] =
 {
 #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
-    ""DEFAULT+\n144-146\n430-440""
+    "DEFAULT+\n144-146\n430-440",
+    "DISABLE\nALL"
 #else
     "DEFAULT+\n137-174\n400-470",
     "FCC HAM\n144-148\n420-450",
