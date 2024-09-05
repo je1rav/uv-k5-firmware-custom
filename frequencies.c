@@ -170,10 +170,16 @@ int32_t TX_freq_check(const uint32_t Frequency)
         return -1;  // BX chip does not work in this range
 
 #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted to 1W for JA bands
-    if (Frequency >= 14400000 && Frequency < 14600000)
-        return 0;
-    if (Frequency >= 43000000 && Frequency < 44000000)
-        return 0;
+    switch (gSetting_F_LOCK)
+    {
+        case F_LOCK_ALL:
+            break;
+        case default:  
+            if (Frequency >= 14400000 && Frequency < 14600000)
+            return 0;
+            if (Frequency >= 43000000 && Frequency < 44000000)
+            return 0;
+    }
 #else			
     switch (gSetting_F_LOCK)
     {
