@@ -136,7 +136,7 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
 * code refactoring and many memory optimization,
 * and more...
 
-## Added feature by JE1RAV to adjust JA regulation without hardware modifications:
+## Added feature to adjust JA regulation without hardware modifications:
 * The maximum power output is limited to 1 W because of JA spurious regulation, which requires less than -60dBc above 1W output and less than 50uW below 1W output.
    * ”Mid ~2W” and "High ~5W" are removed from the menu list.
    * If you want to fine-tune the output power, plaese change the constants in the lines 582 and 585 in "radio.c" file.     
