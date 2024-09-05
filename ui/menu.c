@@ -303,13 +303,27 @@ const char * const gSubMenu_F_LOCK[] =
 {
 #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
     "CE HAM\n144-146\n430-440",
+    "CE HAM\n144-146\n430-440",
+    #ifdef ENABLE_FEAT_F4HWN_CA
+    "CE HAM\n144-146\n430-440",
+    #endif
+    "CE HAM\n144-146\n430-440",
+    "CE HAM\n144-146\n430-440",
+    "CE HAM\n144-146\n430-440",
+    "CE HAM\n144-146\n430-440",
+#ifdef ENABLE_FEAT_F4HWN_PMR
+    "CE HAM\n144-146\n430-440",
+#endif
+#ifdef ENABLE_FEAT_F4HWN_GMRS_FRS_MURS
+    "CE HAM\n144-146\n430-440",
+#endif
     "DISABLE\nALL"
 #else
     "DEFAULT+\n137-174\n400-470",
     "FCC HAM\n144-148\n420-450",
     #ifdef ENABLE_FEAT_F4HWN_CA
     "CA HAM\n144-148\n430-450",
-#endif
+    #endif
     "CE HAM\n144-146\n430-440",
     "GB HAM\n144-148\n430-440",
     "137-174\n400-430",
