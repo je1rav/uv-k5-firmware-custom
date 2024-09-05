@@ -172,7 +172,7 @@ int32_t TX_freq_check(const uint32_t Frequency)
 #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted to 1W for JA bands
     switch (gSetting_F_LOCK)
     {
-        case F_LOCK_FCC:
+        case F_LOCK_CE:
             if (Frequency >= 14400000 && Frequency < 14600000)
                 return 0;
             if (Frequency >= 43000000 && Frequency < 44000000)
