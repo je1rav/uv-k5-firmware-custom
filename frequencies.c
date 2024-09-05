@@ -169,7 +169,7 @@ int32_t TX_freq_check(const uint32_t Frequency)
     if (Frequency >= BX4819_band1.upper && Frequency < BX4819_band2.lower)
         return -1;  // BX chip does not work in this range
 
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted to 1W for JAPAN bands
+#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted to 1W for JA bands
     if (Frequency >= 14400000 && Frequency < 14600000)
         return 0;
     if (Frequency >= 43000000 && Frequency < 44000000)
