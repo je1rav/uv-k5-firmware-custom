@@ -177,9 +177,9 @@ const char gSubMenu_TXP[][6] =
     "LOW 2",
     "LOW 3",
     "LOW 4",
-    "LOW 5",
-    "MID",
-    "HIGH"
+    "LOW 5"  //  ,
+    //  "MID",
+    //  "HIGH"
 };
 
 const char gSubMenu_SFT_D[][4] =
@@ -297,23 +297,23 @@ const char gSubMenu_RESET[][4] =
 
 const char * const gSubMenu_F_LOCK[] =
 {
-    "DEFAULT+\n137-174\n400-470",
-    "FCC HAM\n144-148\n420-450",
+//    "DEFAULT+\n137-174\n400-470",
+//    "FCC HAM\n144-148\n420-450",
 #ifdef ENABLE_FEAT_F4HWN_CA
-    "CA HAM\n144-148\n430-450",
+//    "CA HAM\n144-148\n430-450",
 #endif
     "CE HAM\n144-146\n430-440",
-    "GB HAM\n144-148\n430-440",
-    "137-174\n400-430",
-    "137-174\n400-438",
+//    "GB HAM\n144-148\n430-440",
+//    "137-174\n400-430",
+//    "137-174\n400-438",
 #ifdef ENABLE_FEAT_F4HWN_PMR
-    "PMR 446",
+//    "PMR 446",
 #endif
 #ifdef ENABLE_FEAT_F4HWN_GMRS_FRS_MURS
-    "GMRS\nFRS\nMURS",
+//    "GMRS\nFRS\nMURS",
 #endif
     "DISABLE\nALL",
-    "UNLOCK\nALL",
+//    "UNLOCK\nALL",
 };
 
 const char gSubMenu_RX_TX[][6] =
@@ -362,9 +362,9 @@ const char gSubMenu_SCRAMBLER[][7] =
         "125m",
         "250m",
         "500m",
-        "1",
-        "2",
-        "5"
+        "1" // ,
+        //  "2",
+        //  "5"
     };
 
     const char gSubMenu_SET_PTT[][8] =
