@@ -1205,7 +1205,7 @@ void UI_DisplayMain(void)
 
         if (state == VFO_STATE_NORMAL || state == VFO_STATE_ALARM)
         {   // show the TX power
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
+#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
             uint8_t currentPower = vfoInfo->OUTPUT_POWER % 6;            
 #else
             uint8_t currentPower = vfoInfo->OUTPUT_POWER % 8;
