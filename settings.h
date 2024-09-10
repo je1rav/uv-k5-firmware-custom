@@ -38,7 +38,7 @@ enum POWER_OnDisplayMode_t {
 };
 typedef enum POWER_OnDisplayMode_t POWER_OnDisplayMode_t;
 
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited　to 1W for JA bands
+#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
 enum TxLockModes_t {
     F_LOCK_DEF, //all default frequencies + configurable
     F_LOCK_ALL, // disable TX on all frequencies
