@@ -177,7 +177,7 @@ const char gSubMenu_TXP[][6] =
     "LOW 2",
     "LOW 3",
     "LOW 4",
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
+#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
     "LOW 5"
 #else 
     "LOW 5",
