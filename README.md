@@ -136,11 +136,8 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
 * code refactoring and many memory optimization,
 * and more...
 
-## Added feature to adjust JA regulation without hardware modifications:
-* The maximum power output is limited to 1 W because of JA spurious regulation, which requires less than -60dBc above 1W output and less than 50uW below 1W output.
-   * ”Mid ~2W” and "High ~5W" are removed from the menu list.
-   * If you want to fine-tune the output power for 1W, please change the constants in the lines 582 and 585 in "radio.c" file.     
-* TX frequency limitation for JA (Cannot selecte other bands even from the hidden menu)
+## Added feature to adjust JA regulation:
+* TX frequency limitation (144-146NHz & 430-440MHz) for JA users (Cannot set other bands even from the hidden menu)
 * Three compiled binary files for egzumer's uvtools to flash the firmware
    * f4hwn.packed.bin: fagci spectrum analyzer + FM radio without VOX, aircopy and so on
    * f4hwn_spectrum.packed.bin: spectrum analyzer improved by F4HWN without FM radio
