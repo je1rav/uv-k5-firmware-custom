@@ -137,12 +137,7 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
 * and more...
 
 ## Added feature to adjust JA regulation:
-* TX frequency limitation (144-146NHz & 430-440MHz) for JA users (Cannot set other bands even from the hidden menu)
-* Three compiled binary files for egzumer's uvtools to flash the firmware
-   * f4hwn.packed.bin: fagci spectrum analyzer + FM radio without VOX, aircopy and so on
-   * f4hwn_spectrum.packed.bin: spectrum analyzer improved by F4HWN without FM radio
-   * f4hwn_fmradio.packed.bin: FM radio without spectrum analyzer
-
+* TX frequency limitation (144-146NHz & 430-440MHz) for JA users (Cannot set the other bands even from the hidden menu)
 
 ## Main features from Egzumer:
 * many of OneOfEleven mods:
