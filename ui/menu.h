@@ -149,7 +149,7 @@ enum
 extern const uint8_t FIRST_HIDDEN_MENU_ITEM;
 extern const t_menu_item MenuList[];
 
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W
+#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
     extern const char        gSubMenu_TXP[6][6];
 #else
     extern const char        gSubMenu_TXP[8][6];
@@ -174,7 +174,7 @@ extern const char        gSubMenu_D_RSP[4][11];
 #endif
 
 #ifdef ENABLE_FEAT_F4HWN
-    #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W
+    #ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
         extern const char    gSubMenu_SET_PWR[5][6];
     #else
         extern const char    gSubMenu_SET_PWR[7][6];
