@@ -177,13 +177,9 @@ const char gSubMenu_TXP[][6] =
     "LOW 2",
     "LOW 3",
     "LOW 4",
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
-    "LOW 5"
-#else 
     "LOW 5",
     "MID",
     "HIGH"
-#endif
 };
 
 const char gSubMenu_SFT_D[][4] =
@@ -301,7 +297,7 @@ const char gSubMenu_RESET[][4] =
 
 const char * const gSubMenu_F_LOCK[] =
 {
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
+#ifndef ENABLE_LIMIT_TX_JA     //F_LOCK is limited only for JA bands
     "JA HAM\n144-146\n430-440",
     "DISABLE\nALL",
 #else
@@ -371,13 +367,9 @@ const char gSubMenu_SCRAMBLER[][7] =
         "125m",
         "250m",
         "500m",
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
-        "1"
-#else
         "1",
         "2",
         "5"
-#endif
     };
 
     const char gSubMenu_SET_PTT[][8] =
