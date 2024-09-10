@@ -794,7 +794,7 @@ void MENU_AcceptSetting(void)
             break;
 
         case MENU_F_LOCK: {
-#ifndef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
+#ifndef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limited to 1W for JA bands
             if(gSubMenuSelection == F_LOCK_NONE) { // select 10 times to enable
                 gUnlockAllTxConfCnt++;
 #ifdef ENABLE_FEAT_F4HWN
