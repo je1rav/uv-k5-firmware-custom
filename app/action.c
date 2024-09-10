@@ -120,11 +120,7 @@ static_assert(ARRAY_SIZE(action_opt_table) == ACTION_OPT_LEN);
 
 void ACTION_Power(void)
 {
-#ifdef ENABLE_LIMIT_TX_POWER_1W     //OUTPUT_POWER is limitted　to 1W for JA bands
-    if (++gTxVfo->OUTPUT_POWER > OUTPUT_POWER_LOW5)
-#else
     if (++gTxVfo->OUTPUT_POWER > OUTPUT_POWER_HIGH)
-#endif
         gTxVfo->OUTPUT_POWER = OUTPUT_POWER_LOW1;
 
     gRequestSaveChannel = 1;
