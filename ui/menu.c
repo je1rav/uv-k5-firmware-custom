@@ -298,7 +298,7 @@ const char gSubMenu_RESET[][4] =
 const char * const gSubMenu_F_LOCK[] =
 {
 #ifdef ENABLE_LIMIT_TX_JA     //F_LOCK is limited only for JA bands
-    "JA HAM\n50-54\n430-440",
+    "JA HAM\n3\nbands",
     "DISABLE\nALL",
 #else
     "DEFAULT+\n137-174\n400-470",
