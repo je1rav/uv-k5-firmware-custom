@@ -136,8 +136,8 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
 * code refactoring and many memory optimization,
 * and more...
 
-## Added feature to adjust JA regulation (50MHz & 430MHz Bands):
-* TX frequency limitation (50-54NHz & 430-440MHz) for JA users (Cannot set the other bands even from the hidden menu)
+## Added feature to adjust JA regulation (50MHz, 144MHz & 430MHz Bands):
+* TX frequency limitation (50-54NHz, 144-146NHz && 430-440MHz) for JA users (Cannot set the other bands even from the hidden menu)
 
 ## Main features from Egzumer:
 * many of OneOfEleven mods:
